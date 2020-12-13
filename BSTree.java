@@ -5,7 +5,7 @@ public class BSTree {
         root = addRecursive(root, data);
     }
 
-    public Node addRecursive(Node current, int data) {
+    private Node addRecursive(Node current, int data) {
         if (current == null) {
             return new Node(data);
         }
@@ -73,7 +73,7 @@ public class BSTree {
         displayInorderRecursive(root);
     }
 
-    public void displayInorderRecursive(Node n) {
+    private void displayInorderRecursive(Node n) {
         if (n != null) {
             displayInorderRecursive(n.left);
             System.out.println(n.data);
